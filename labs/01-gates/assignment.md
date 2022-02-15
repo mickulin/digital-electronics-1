@@ -4,7 +4,7 @@
 
 1. Equations of all three versions of logic function f(c,b,a):
 
-   ![Logic function](images/equations.png)
+   ![Logic function](images/vzorce.JPG)
 
 2. Listing of VHDL architecture from design file (`design.vhd`) for all three functions. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
@@ -14,21 +14,23 @@ begin
     f_org_o  <= (not(b_i) and a_i) or (not(c_i) and not(b_i));
     f_nand_o <= not(a_i) or not(b_i);
     f_nor_o  <= not(a_i) and not(b_i);
+    f_left_o <= (a_i or b_i) and (a_i or c_i);
+    f_right_o <= a_i or (b_i and c_i);
 end architecture dataflow;
 ```
 
 3. Complete table with logic functions' values:
 
-| **c** | **b** |**a** | **f(c,b,a)_ORG** | **f(c,b,a)_NAND** | **f(c,b,a)_NOR** |
-| :-: | :-: | :-: | :-: | :-: | :-: |
-| 0 | 0 | 0 | 1 | 1 | 1 |
-| 0 | 0 | 1 | 1 | 1 | 0 |
-| 0 | 1 | 0 | 0 | 1 | 0 |
-| 0 | 1 | 1 | 0 | 0 | 0 |
-| 1 | 0 | 0 | 0 | 1 | 1 |
-| 1 | 0 | 1 | 0 | 1 | 0 |
-| 1 | 1 | 0 | 0 | 1 | 0 |
-| 1 | 1 | 1 | 0 | 0 | 0 |
+| **c** | **b** |**a** | **f(c,b,a)_ORG** | **f(c,b,a)_NAND** | **f(c,b,a)_NOR** | **f(c,b,a)_LEFT** | **f(c,b,a)_RIGHT** 
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0 | 0 | 1 | 1 | 1 | 0 | 0 |
+| 0 | 0 | 1 | 1 | 1 | 0 | 1 | 1 |
+| 0 | 1 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 0 | 0 | 0 | 1 | 1 |
+| 1 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
+| 1 | 0 | 1 | 0 | 1 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 0 | 1 | 0 | 1 | 1 |
+| 1 | 1 | 1 | 0 | 0 | 0 | 1 | 1 |
 
 ### Distributive laws
 
