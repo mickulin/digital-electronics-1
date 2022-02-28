@@ -1,3 +1,3 @@
 **Schematic of LED connections**
 
-![unknown1](images/led.PNG)
+![unknown1](images/led.png)
