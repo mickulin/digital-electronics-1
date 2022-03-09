@@ -107,11 +107,11 @@
     
     -- Turn LED(4) on if input value is equal to 0, ie "0000"
     -- LED(4) <= `0` when WRITE YOUR CODE HERE
-    --LED(4) <= '0' when (SW = 0000);
+    LED(4) <= '0' when (SW = 0000);
 
     -- Turn LED(5) on if input value is greater than "1001", ie 10, 11, 12, ...
     -- LED(5) <= WRITE YOUR CODE HERE
-    --LED(5) <= '0' when (SW > 1001)
+    LED(5) <= '0' when (SW > 1001)
 
     -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
     -- LED(6) <= WRITE YOUR CODE HERE
