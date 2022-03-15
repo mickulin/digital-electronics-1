@@ -1,5 +1,4 @@
-# Lab 4: YOUR_FIRSTNAME LASTNAME
-
+# Lab 4: MIČKA PETR
 ### Seven-segment display decoder
 
 1. Listing of VHDL stimulus process from testbench file (`tb_hex_7seg.vhd`) with asserts. Verify all input combinations. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
