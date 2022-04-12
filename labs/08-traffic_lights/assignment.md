@@ -110,8 +110,8 @@
 3. Screenshot with simulated time waveforms. The full functionality of the entity must be verified. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
 Reset:
-   ![your figure](imgaes/1.png)
+   ![your figure](images/1.png)
    
 With c_en:
-   ![your figure](imgaes/2.png)
+   ![your figure](images/2.png)
    
